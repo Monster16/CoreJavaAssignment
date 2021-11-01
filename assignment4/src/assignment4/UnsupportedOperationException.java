@@ -17,6 +17,7 @@ public class UnsupportedOperationException {
 
 		for(String s: l )
 		System.out.println(s);
+		System.out.println("Unsupported Operation Exception Handled here");
 
 	}
 
