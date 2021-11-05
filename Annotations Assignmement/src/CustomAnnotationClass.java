@@ -25,16 +25,19 @@ import java.lang.annotation.Annotation;
 @Info ()
 class myclass{
 		
-		
+		public void Calling() {
+			System.out.println("This question is of Annotation Assignment while implemention of Annotation on class");
+		}
 	}
 public class CustomAnnotationClass {
 		
 	public static void main(String[] args) {
 			
 			myclass ns = new myclass();
+			ns.Calling();
 			
 		
-			Class f  = ns.getClass();
+			Class<? extends myclass> f  = ns.getClass();
 			Annotation annn = f.getAnnotation(Info.class);
 			Info i = (Info)annn;
 			System.out.println("AuthorID:"+i.AuthorID()); 

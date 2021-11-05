@@ -24,10 +24,11 @@ public class ResultDeclaration {
 			System.out.println("You're passed");
 			
 		}else if (
-				 (subj1>60) || (subj2>60) && (subj3>60) && (subj4>60) && (subj5>60)
-				&& (subj1>60) && (subj2>60) || (subj3>60) && (subj4>60) && (subj5>60)
-				&& (subj1>60) && (subj2>60) && (subj3>60) || (subj4>60) && (subj5>60)
-				&& (subj1>60) && (subj2>60) && (subj3>60) && (subj4>60) || (subj5>60)
+				 (subj1>60) && (subj2>60) || (subj3<60) || (subj4<60) || (subj5<60)
+				&& (subj2>60) && (subj3>60) || (subj4<60) || (subj5<60) || (subj1<60)
+				&& (subj3>60) && (subj4>60) || (subj5<60) || (subj1<60) || (subj2<60)
+				&& (subj4>60) && (subj5>60) || (subj1<60) || (subj2<60) || (subj3<60)
+				&& (subj5>60) && (subj1>60) || (subj2<60) || (subj3<60) || (subj4<60)
 				)
 				
 		{

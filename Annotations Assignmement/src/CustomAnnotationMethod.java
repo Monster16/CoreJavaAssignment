@@ -14,7 +14,7 @@ import java.lang.reflect.*;
 
 @interface Test{
 	
-	String TestCase() ;
+	String TestCase()  ;
 }
 
 
@@ -25,6 +25,8 @@ class test1{
 	      {
 		  System.out.println("hello annotation");
 		  }  
+	  
+	      
 	}
 	
 	
@@ -40,6 +42,7 @@ public class CustomAnnotationMethod {
 		Annotation ann = d.getAnnotation(Test.class);
 		Test ts = (Test)ann;
 		System.out.println( ts.TestCase());
+		t.sayHello();
 		
 	}
 
